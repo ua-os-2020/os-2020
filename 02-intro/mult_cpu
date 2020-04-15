@@ -1,0 +1,8 @@
+#
+#   mult_cpu
+#
+./11-cpu A &
+./11-cpu B &
+./11-cpu C &
+./11-cpu D &
+

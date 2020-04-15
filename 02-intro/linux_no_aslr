@@ -1,0 +1,4 @@
+#
+#   linux_noaslr
+#
+setarch `uname -m` -R $SHELL

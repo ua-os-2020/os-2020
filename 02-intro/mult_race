@@ -1,0 +1,10 @@
+#!/bin/bash
+if [[ $# -ne 1 ]]
+then
+    echo "Illegal number of parameters"
+    exit 2
+else
+max=$1
+for i in $(seq 1 $max); do ./13-race1; done
+fi
+

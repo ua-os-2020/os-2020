@@ -20,7 +20,7 @@ main(int argc, char *argv[])
     char buffer[20];
     int fd, rc;
 
-    sprintf( buffer, "%s\n", argc == 1 ? "Hello World": *++argv );
+    sprintf( buffer, "%s\n", argc == 1 ? "Hello World": argv[1] );
 
     fd = open("tmp/persist", O_WRONLY | O_CREAT | O_TRUNC, S_IRUSR | S_IWUSR);
     assert(fd >= 0);

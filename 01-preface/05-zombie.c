@@ -10,14 +10,16 @@
 #include <unistd.h>
 #include <sys/wait.h>
 
+#define SLEEP_DEF   2
+
 int
-main( int argc, char **argv)
+main( int argc, char *argv[])
 {
     unsigned seconds;
     int ppid, chpid;
 
     ppid = getpid();
-    seconds = argc == 1 ? 2: atoi( *++argv );
+    seconds = argc == 1 ? SLEEP_DEF: atoi( argv[1] );
 
     if ( ( chpid = fork() ) > 0 )    //  Parent
     {

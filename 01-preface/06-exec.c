@@ -26,8 +26,8 @@ do_process( char *const argv[] )
 
     if( pid == 0 )      //  Child
     {
-        execvp( *argv, argv);
-        fprintf(stderr, "No cmd \"%s\"\n", *argv );
+        execvp( argv[0], argv);
+        fprintf(stderr, "No cmd \"%s\"\n", argv[0] );
         return EXIT_FAILURE;
     } else              
     {                   //  Parent
@@ -38,7 +38,7 @@ do_process( char *const argv[] )
 
 
 int
-main( int argc, char **argv )
+main( int argc, char *argv[] )
 {
     if( argc == 1 )
     {
@@ -46,6 +46,6 @@ main( int argc, char **argv )
         return EXIT_FAILURE;
     }
 
-    return do_process( argv+1 );
+    return do_process( &argv[1] );
 }
 

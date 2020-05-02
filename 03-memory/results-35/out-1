@@ -1,0 +1,9 @@
+Size of buffers -> 1st: 20, 2nd: 30
+Content of buffer = Hello World
+pinit = 0x555555756670, pnew = 0x555555756670
+Pointers pinit and pnew are same
+Content of buffer = Hello World
+pnew ok freed done
+pinit bad freed done
+Content of buffer = pfuUUU
+

@@ -1,0 +1,4 @@
+(pid=14070) -> Automatic: &argv = 0x7fffffffddc0, &argc = 0x7fffffffddcc, &pid = 0x7fffffffddd0, &count = 0x7fffffffddd4
+(pid=14070) -> Globals not init: &global_nin = 0x555555755020, &gnin = 0x55555575501c
+(pid=14070) -> Globals initted : &global_in = 0x555555755014, &gin = 0x555555755010
+(pid=14070) -> Globals constants : &global_kte = 0x555555554a64, &g_kte = 0x555555554a60

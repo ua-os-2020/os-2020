@@ -1,0 +1,9 @@
+Size of buffers -> 1st: 20, 2nd: 1048576
+Content of buffer = Hello World
+pinit = 0x555555756670, pnew = 0x7ffff7ec9010
+Pointers pinit and pnew are different
+Content of buffer = Hello World
+pnew ok freed done
+pinit bad freed done
+Segmentation fault (core dumped)
+

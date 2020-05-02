@@ -1,0 +1,20 @@
+14118:   ./34-locality 60
+0000555555554000      4K r-x-- 34-locality
+0000555555754000      4K r---- 34-locality
+0000555555755000      4K rw--- 34-locality
+0000555555756000    132K rw---   [ anon ]
+00007ffff79e4000   1948K r-x-- libc-2.27.so
+00007ffff7bcb000   2048K ----- libc-2.27.so
+00007ffff7dcb000     16K r---- libc-2.27.so
+00007ffff7dcf000      8K rw--- libc-2.27.so
+00007ffff7dd1000     16K rw---   [ anon ]
+00007ffff7dd5000    156K r-x-- ld-2.27.so
+00007ffff7fca000      8K rw---   [ anon ]
+00007ffff7ff8000     12K r----   [ anon ]
+00007ffff7ffb000      4K r-x--   [ anon ]
+00007ffff7ffc000      4K r---- ld-2.27.so
+00007ffff7ffd000      4K rw--- ld-2.27.so
+00007ffff7ffe000      4K rw---   [ anon ]
+00007ffffffde000    132K rw---   [ stack ]
+ffffffffff600000      4K --x--   [ anon ]
+ total             4508K
